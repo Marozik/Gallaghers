@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Location</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="svg-decor d-none d-lg-block">
+        <div class="corner decor-item top-left">
+          <img src="img/decor/gold/top-left.svg" alt="decor" />
+        </div>
+        <div class="corner decor-item top-right">
+          <img src="img/decor/gold/top-right.svg" alt="decor" />
+        </div>
+        <div class="corner decor-item bottom-left">
+          <img src="img/decor/gold/bottom-left.svg" alt="decor" />
+        </div>
+        <div class="corner bottom-right">
+          <img src="img/decor/gold/bottom-right.svg" alt="decor" />
+        </div>
+        <div class="line top-line"></div>
+        <div class="line bottom-line"></div>
+        <div class="line left-line"></div>
+        <div class="line right-line"></div>
+      </div>
+      <header class="header fixed-top">
+        <nav class="navbar navbar-expand-fluid px-0 px-lg-0">
+          <div class="container-fluid container-lg mx-lg-auto mx-0 w-100">
+            <a class="navbar-brand" href="#">
+              <img class="img-fluid" src="img/header/logo.png" alt="Header logo" />
+            </a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="container-team mx-auto">
+                <div class="row">
+                  <div class="col-12 col-md-6 position-relative p-5">
+                    <div class="svg-decor">
+                      <div class="corner decor-item top-left">
+                        <img src="img/decor/gold/top-left.svg" alt="decor" />
+                      </div>
+                      <div class="corner decor-item top-right">
+                        <img src="img/decor/gold/top-right.svg" alt="decor" />
+                      </div>
+                      <div class="corner decor-item bottom-left">
+                        <img src="img/decor/gold/bottom-left.svg" alt="decor" />
+                      </div>
+                      <div class="corner bottom-right">
+                        <img src="img/decor/gold/bottom-right.svg" alt="decor" />
+                      </div>
+                      <div class="line top-line"></div>
+                      <div class="line bottom-line"></div>
+                      <div class="line left-line"></div>
+                      <div class="line right-line"></div>
+                    </div>
+                    <h4 class="navbar-title text-center my-3 my-lg-4 fw-semibold">New York</h4>
+                    <ul class="navbar-nav w-100 align-items-center">
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu.html">Dinner menu</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu.html">Lunch menu</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu.html">Dessert menu</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu.html">The Bar</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="team.html">The Team</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="private-events.html">Private Events</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="inquiry-form.html">Inquiry Form</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="press.html">Press</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="location.html">Location Information</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-6 position-relative p-5">
+                    <div class="svg-decor">
+                      <div class="corner decor-item top-left">
+                        <img src="img/decor/gold/top-left.svg" alt="decor" />
+                      </div>
+                      <div class="corner decor-item top-right">
+                        <img src="img/decor/gold/top-right.svg" alt="decor" />
+                      </div>
+                      <div class="corner decor-item bottom-left">
+                        <img src="img/decor/gold/bottom-left.svg" alt="decor" />
+                      </div>
+                      <div class="corner bottom-right">
+                        <img src="img/decor/gold/bottom-right.svg" alt="decor" />
+                      </div>
+                      <div class="line top-line"></div>
+                      <div class="line bottom-line"></div>
+                      <div class="line left-line"></div>
+                      <div class="line right-line"></div>
+                    </div>
+                    <h4 class="navbar-title text-center my-3 my-lg-4 fw-semibold">Boca Raton</h4>
+                    <ul class="navbar-nav w-100 align-items-center">
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu-boca.html">Dinner menu</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu-boca.html">Lunch menu</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu-boca.html">Dessert menu</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="menu-boca.html">The Bar</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="team-boca.html">The Team</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="private-events-boca.html">Private Events</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="inquiry-form-boca.html">Inquiry Form</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="press-boca.html">Press</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="location-boca.html">Location Information</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="hero position-relative image-bg">
+          <img src="img/location/hero/hero.jpeg" alt="Main image" />
+        </div>
+        <section class="location px-0 px-lg-3 pt-3 pt-lg-5">
+          <div class="container-custom mx-auto px-3 px-lg-4 position-relative text-center">
+            <div class="bronze svg-decor">
+              <div class="corner decor-item top-left">
+                <img src="img/decor/bronze/top-left.svg" alt="decor" />
+              </div>
+              <div class="corner decor-item top-right">
+                <img src="img/decor/bronze/top-right.svg" alt="decor" />
+              </div>
+              <div class="corner decor-item bottom-left">
+                <img src="img/decor/bronze/bottom-left.svg" alt="decor" />
+              </div>
+              <div class="corner bottom-right">
+                <img src="img/decor/bronze/bottom-right.svg" alt="decor" />
+              </div>
+              <div class="line line-bronze top-left-line"></div>
+              <div class="line line-bronze top-right-line"></div>
+              <div class="line line-bronze bottom-line"></div>
+              <div class="line line-bronze left-line"></div>
+              <div class="line line-bronze right-line"></div>
+            </div>
+            <h1 class="mx-auto fw-semibold">New York</h1>
+            <div class="inner py-3 py-md-5 px-2">
+              <div data-aos="fade-up" class="map shadow-lg mt-1 mx-auto mb-4 mb-lg-5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.963391720974!2d-73.9838826!3d40.76282989999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25857cbba1dbb%3A0xb00398903ddd8fb0!2s228%20W%2052nd%20St%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2sdk!4v1683545776184!5m2!1sen!2sdk"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p data-aos="fade-up" class="text fw-semibold mb-3 mb-lg-5">
+                We’re located in the heart of New York City on 52nd street between Broadway and 8th Avenue.
+              </p>
+              <a data-aos="fade-up" class="link" target="_blank" href="https://goo.gl/maps/Fkt7xEQtsC6uyNX7A"
+                >228 West 52nd Street <br />
+                New York, NY 10019</a
+              >
+              <br />
+              <a data-aos="fade-up" class="d-inline-block mb-4 link" href="tel:2125865000">Phone: (212) 586-5000</a>
+              <p data-aos="fade-up" class="text">For reservations</p>
+              <a data-aos="fade-up" class="d-inline-block mb-4 link" href="fax:212.586.5000">212.586.5000</a>
+              <br />
+              <a data-aos="fade-up" href="#" class="btn btn-bg rounded-0 px-4 text-white text-capitalize mb-3 mb-md-5">Inquiry Form </a>
+              <div class="container-location mx-auto mb-4 mb-lg-5">
+                <div class="row justify-content-center gy-4 gy-lg-5">
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">For Media Inquiries and Guest Relations:</p>
+                      <a href="mailto:Events@GallaghersNYSteakhouse.com" class="link"
+                        >Events@GallaghersNYS <br />
+                        teakhouse.com</a
+                      >
+                    </div>
+                  </article>
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">Location and Filming Inquiries:</p>
+                      <a href="mailto:Events@GallaghersNYSteakhouse.com" class="link"
+                        >Events@GallaghersNYS <br />
+                        teakhouse.com</a
+                      >
+                    </div>
+                  </article>
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">To book a private event</p>
+                      <a href="mailto:Events@GallaghersNYSteakhouse.com" class="link"
+                        >Events@GallaghersNYS <br />
+                        teakhouse.com</a
+                      >
+                    </div>
+                  </article>
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">
+                        Dean Poll <br />
+                        Owner
+                      </p>
+                      <a href="mailto:Dean@GallaghersNYSteakhouse.com" class="link"
+                        >Dean@GallaghersNYS <br />
+                        teakhouse.com</a
+                      >
+                    </div>
+                  </article>
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">
+                        Alan Ashkinaze <br />
+                        Executive Chef
+                      </p>
+                      <a href="mailto:Alan@GallaghersNYSteakhouse.com" class="link"
+                        >Alan@GallaghersNYS <br />
+                        teakhouse.com</a
+                      >
+                    </div>
+                  </article>
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">
+                        Brian Jontow <br />
+                        General Manager
+                      </p>
+                      <a href="mailto:BJontow@pollgroup.net" class="link">BJontow@pollgroup.net</a>
+                    </div>
+                  </article>
+                  <article data-aos="fade-up" class="item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-0 py-4 px-3">
+                      <p class="fw-semibold">
+                        James Modena <br />
+                        Manager
+                      </p>
+                      <a href="mailto:jmodena@gallaghersnysteakhouse.com" class="link"
+                        >jmodena@gallaghers <br />
+                        nysteakhouse.com</a
+                      >
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="px-0 px-lg-3 pt-3 pt-lg-4">
+          <div class="container-custom mx-auto px-3 px-lg-4 position-relative text-center">
+            <div class="bronze svg-decor">
+              <div class="corner decor-item top-left">
+                <img src="img/decor/bronze/top-left.svg" alt="decor" />
+              </div>
+              <div class="corner decor-item top-right">
+                <img src="img/decor/bronze/top-right.svg" alt="decor" />
+              </div>
+              <div class="corner decor-item bottom-left">
+                <img src="img/decor/bronze/bottom-left.svg" alt="decor" />
+              </div>
+              <div class="corner bottom-right">
+                <img src="img/decor/bronze/bottom-right.svg" alt="decor" />
+              </div>
+              <div class="line line-bronze top-left-line"></div>
+              <div class="line line-bronze top-right-line"></div>
+              <div class="line line-bronze bottom-line"></div>
+              <div class="line line-bronze left-line"></div>
+              <div class="line line-bronze right-line"></div>
+            </div>
+            <h2 class="mx-auto fw-semibold">By Subway & Bus</h2>
+            <div class="inner container-small mx-auto text-center py-4 py-md-5 px-2">
+              <div class="row mb-3 mb-lg-5">
+                <div data-aos="fade-right" class="col-12 col-md-6">
+                  <div class="text-uppercase text-white fw-semibold mb-3">
+                    <div class="number d-inline-flex justify-content-center align-items-center rounded-circle bg-warning">b</div>
+                    <div class="number d-inline-flex justify-content-center align-items-center rounded-circle bg-warning">d</div>
+                    <div class="number d-inline-flex justify-content-center align-items-center rounded-circle bg-primary">e</div>
+                  </div>
+                  <p class="text">W 53rd St. and Broadway/ 7th Ave.</p>
+                </div>
+                <div data-aos="fade-left" class="col-12 col-md-6">
+                  <div class="text-uppercase text-white fw-semibold mb-3">
+                    <div class="number d-inline-flex justify-content-center align-items-center rounded-circle bg-danger">1</div>
+                  </div>
+                  <p class="text">W 50th St. and Broadway</p>
+                </div>
+              </div>
+              <p data-aos="fade-up" class="text fw-semibold mb-4">Which bus should I take to get to?</p>
+              <ul data-aos="fade-up" class="fw-semibold mb-3 mb-lg-5">
+                <li class="mb-3">M104, M20, M7 <span class="fw-normal">- W 53rd and 7th Ave.</span></li>
+                <li class="mb-3">M104, M& <span class="fw-normal">- W 54th and 7th Ave. </span></li>
+                <li class="">M50 <span class="fw-normal">- W 50th and 7th Ave.</span></li>
+              </ul>
+              <p data-aos="fade-up" class="text">Where to park at Gallaghers Steakhouse?</p>
+              <a data-aos="fade-up" href="https://goo.gl/maps/MAU95ssWNjLVLuVt7" target="_blank" class="link"
+                >Icon Parking 207 West 52nd Street (52nd between Broadway and 7th)</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="trio mb-4 mb-md-5">
+          <div class="container-trio mx-auto px-3 px-lg-4">
+            <div class="row">
+              <article data-aos="flip-left" class="card position-relative border-0 bg-transparent text-center col-12 col-sm-6 col-lg-4">
+                <div class="bronze svg-decor">
+                  <div class="corner decor-item top-left">
+                    <img src="img/decor/bronze/top-left.svg" alt="decor" />
+                  </div>
+                  <div class="corner decor-item top-right">
+                    <img src="img/decor/bronze/top-right.svg" alt="decor" />
+                  </div>
+                  <div class="corner decor-item bottom-left">
+                    <img src="img/decor/bronze/bottom-left.svg" alt="decor" />
+                  </div>
+                  <div class="corner bottom-right">
+                    <img src="img/decor/bronze/bottom-right.svg" alt="decor" />
+                  </div>
+                  <div class="line line-bronze top-line"></div>
+                  <div class="line line-bronze bottom-line"></div>
+                  <div class="line line-bronze left-line"></div>
+                  <div class="line line-bronze right-line"></div>
+                </div>
+                <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-between">
+                  <h3 class="mb-2 mb-lg-4 mt-3 mt-lg-0 fw-semibold">Gift Cards</h3>
+                  <div class="image bg-white mb-4 p-3 rounded-2 shadow-lg mx-xl-5">
+                    <img class="img-fluid" src="img/trio/gc-logo.png" alt="Gift card image" />
+                  </div>
+                  <a href="#" class="btn btn-bg rounded-0 text-white text-capitalize align-self-md-center mb-3">Purchase Gift Card</a>
+                </div>
+              </article>
+              <article data-aos="flip-left" class="card border-0 bg-transparent text-center col-12 col-sm-6 col-lg-4">
+                <div class="bronze svg-decor">
+                  <div class="corner decor-item top-left">
+                    <img src="img/decor/bronze/top-left.svg" alt="decor" />
+                  </div>
+                  <div class="corner decor-item top-right">
+                    <img src="img/decor/bronze/top-right.svg" alt="decor" />
+                  </div>
+                  <div class="corner decor-item bottom-left">
+                    <img src="img/decor/bronze/bottom-left.svg" alt="decor" />
+                  </div>
+                  <div class="corner bottom-right">
+                    <img src="img/decor/bronze/bottom-right.svg" alt="decor" />
+                  </div>
+                  <div class="line line-bronze top-line"></div>
+                  <div class="line line-bronze bottom-line"></div>
+                  <div class="line line-bronze left-line"></div>
+                  <div class="line line-bronze right-line"></div>
+                </div>
+                <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-between">
+                  <h3 class="mb-2 mb-lg-4 mt-3 mt-lg-0 fw-semibold">Over 90 years of tradition</h3>
+                  <div class="image mb-4"><img class="img-fluid" src="img/trio/firewood.png" alt="Firewood image" /></div>
+                  <a href="#" class="btn btn-bg rounded-0 text-white text-capitalize align-self-md-center mb-3">Learn more</a>
+                </div>
+              </article>
+              <article data-aos="flip-left" class="card border-0 bg-transparent text-center col-12 col-sm-6 col-lg-4">
+                <div class="bronze svg-decor">
+                  <div class="corner decor-item top-left">
+                    <img src="img/decor/bronze/top-left.svg" alt="decor" />
+                  </div>
+                  <div class="corner decor-item top-right">
+                    <img src="img/decor/bronze/top-right.svg" alt="decor" />
+                  </div>
+                  <div class="corner decor-item bottom-left">
+                    <img src="img/decor/bronze/bottom-left.svg" alt="decor" />
+                  </div>
+                  <div class="corner bottom-right">
+                    <img src="img/decor/bronze/bottom-right.svg" alt="decor" />
+                  </div>
+                  <div class="line line-bronze top-line"></div>
+                  <div class="line line-bronze bottom-line"></div>
+                  <div class="line line-bronze left-line"></div>
+                  <div class="line line-bronze right-line"></div>
+                </div>
+                <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-between">
+                  <h3 class="mb-2 mb-lg-4 mt-3 mt-lg-0 fw-semibold">Steaks & Chops</h3>
+                  <div class="image mb-4"><img class="img-fluid" src="img/trio/steaks.png" alt="Steaks image" /></div>
+                  <a href="#" class="btn btn-bg rounded-0 text-white text-capitalize align-self-md-center mb-3">Learn more</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer py-3 py-lg-5 px-lg-3">
+        <div class="container-custom mx-auto px-3">
+          <div class="row py-3 py-lg-5 gy-4">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="d-inline-flex flex-column">
+                <h4 class="fw-semibold">New York</h4>
+                <a href="https://goo.gl/maps/ZDXd9UgeDi6riTqQA" target="_blank" class="link d-inline-block mb-3 mb-lg-4"
+                  >228 West 52nd Street <br />
+                  New York, NY 10019 | Directions
+                </a>
+                <a class="link d-inline-block mb-3 mb-lg-4" href="tel:2125865000">212-586-5000</a>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn rounded-0 text-capitalize px-4">Menus</a>
+                  <a href="#" class="btn rounded-0 text-capitalize px-4">Reservations</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="d-inline-flex flex-column">
+                <h4 class="fw-semibold">Boca Raton</h4>
+                <a href="https://goo.gl/maps/ZDXd9UgeDi6riTqQA" target="_blank" class="link d-inline-block mb-3 mb-lg-4"
+                  >228 West 52nd Street <br />
+                  New York, NY 10019 | Directions
+                </a>
+                <a class="link d-inline-block mb-3 mb-lg-4" href="tel:2125865000">212-586-5000</a>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn rounded-0 text-capitalize px-4">Menus</a>
+                  <a href="#" class="btn rounded-0 text-capitalize px-4">Reservations</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="">
+                <h4 class="fw-semibold mb-3 mb-lg-4">Join Our Newsletter</h4>
+                <form action="#" class="footer-form">
+                  <div class="form-line d-flex flex-column flex-sm-row align-items-sm-center gap-2 mb-2">
+                    <label for="first-name" class="form-label flex-shrink-0 mb-0">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="form-control border-0 rounded-0" />
+                  </div>
+                  <div class="form-line d-flex flex-column flex-sm-row align-items-sm-center gap-2 mb-2">
+                    <label for="last-name" class="form-label flex-shrink-0 mb-0">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="form-control border-0 rounded-0" />
+                  </div>
+                  <div class="form-line d-flex flex-column flex-sm-row align-items-sm-center gap-2">
+                    <label for="email" class="form-label flex-shrink-0 mb-0">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control border-0 rounded-0" />
+                    <button type="submit" class="btn rounded-0 px-4">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row border_top py-3 py-lg-5">
+            <div class="d-flex flex-column flex-lg-row gap-3 align-items-center justify-content-between">
+              <div class="">
+                <ul class="d-flex align-items-center gap-3">
+                  <li>
+                    <a href="#" class="social-link rounded-circle text-decoration-none" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link rounded-circle text-decoration-none" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link rounded-circle text-decoration-none" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <p class="text mb-0 text-center copy">
+                  CopyRight © 2023 All Rights Reserved. | Site by:
+                  <a class="link" href="#" target="_blank">STUDIO<span class="fw-semibold fst-italic">ALITY</span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
