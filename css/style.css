@@ -356,14 +356,8 @@ h4 {
   display: block;
   max-width: 100%;
   z-index: 12;
-  transform: scale(0.5);
   opacity: 0;
-  transition: all 4s ease 0.1s;
   pointer-events: none;
-}
-.loaded .intro-logo {
-  transform: scale(1);
-  opacity: 1;
 }
 .intro-bg {
   position: absolute;
@@ -699,6 +693,9 @@ textarea {
 .navbar-bg {
   background-color: #180705;
 }
+.navbar-bg .navbar-collapse {
+  height: 100vh !important;
+}
 .footer {
   background-color: #180705;
   background-image: url(../img/home/pattern-bg.png);
@@ -750,6 +747,12 @@ textarea {
     position: relative;
     width: 460px;
     left: 50%;
+    transform: scale(0.5);
+    transition: all 4s ease 0.1s;
+  }
+  .loaded .intro-logo {
+    transform: scale(1);
+    opacity: 1;
   }
   .intro-body {
     max-width: 387px;
@@ -775,10 +778,10 @@ textarea {
     white-space: nowrap;
   }
   .swiper-button-next {
-    right: -15px;
+    right: -10px;
   }
   .swiper-button-prev {
-    left: -15px;
+    left: -10px;
   }
 }
 @media (min-width: 2000px) {
@@ -806,12 +809,7 @@ textarea {
   h2 {
     font-size: 42px;
   }
-  .navbar-brand {
-    max-width: 150px;
-  }
-  .navbar {
-    padding-top: 8px;
-  }
+
   .bronze.svg-decor {
     top: 20px;
     left: 10px;
@@ -869,6 +867,15 @@ textarea {
     max-height: 87vh;
     overflow-y: auto;
     overflow-x: hidden;
+  }
+  .navbar {
+    padding-top: 8px;
+  }
+  .navbar-brand {
+    max-width: 150px;
+  }
+  .header {
+    background-color: rgba(0, 0, 0, 0.75);
   }
 }
 @media (max-width: 576px) {
